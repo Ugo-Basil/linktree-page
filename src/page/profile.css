@@ -1,0 +1,123 @@
+.container {
+    background: #fff;
+}
+
+.share_desktop {
+    margin-top: 30px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 350px;
+    top: -20px;
+    background: #FFFFFF;
+    border: 1px dashed #D0D5DD;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.share_mobile{
+    display: none;
+}
+
+.share_png {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 15px;
+    top: 12px;
+   
+    /* border: 1.66667px solid #98A2B3; */
+}
+
+.user-profile {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+#slack {
+    display: none;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #101828;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.link {
+    width: 1152px;
+    height: 76px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EAECF0;
+    padding: 24px 32px;
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
+    color: #101828;
+
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+   margin-bottom: 50px;
+}
+.social-icons{
+    width: 30px;
+    height: 30px; 
+    object-fit: cover;
+    text-align: center;
+}
+
+.icon{
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.footer-text{
+    width: 832.28px;
+    height: 24px;
+    text-align: center;
+}
