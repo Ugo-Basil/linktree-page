@@ -2,6 +2,7 @@ import React from "react";
 
 import profileImg from "../assets/profile.jpg";
 import share from "../assets/share.png";
+import menu from "../assets/menu.png";
 import githubpng from "../assets/github-sign.png";
 import slackpng from "../assets/slack.png";
 import zuripng from "../assets/Zuri.Internship_Logo.png";
@@ -19,11 +20,11 @@ const Profile = () => {
       </div>
       <div className="share_mobile">
         <a className="share_icon" href="/">
-          <img src={share} className="share_png" alt="" />
+          <img src={menu} className="share_png" alt="" />
         </a>
       </div>
       <div className="user-profile">
-        <img src={profileImg} id="profile__img" alt="" />
+        <img src={profileImg} id="profile__img" alt="profile" />
         <h1 id="twitter">@BroBasilJ</h1>
         <h1 id="slack">Basil</h1>
       </div>

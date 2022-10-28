@@ -1,5 +1,6 @@
-.container {
+#container {
     background: #fff;
+    overflow-x: hidden;
 }
 
 .share_desktop {
@@ -81,23 +82,28 @@
 
 }
 
-.icons{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-   margin-bottom: 50px;
-}
+
 .social-icons{
     width: 30px;
     height: 30px; 
     object-fit: cover;
     text-align: center;
 }
+.icons {
+    display: flex;
+    /* gap: 20px; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 .icon{
-    padding: 20px;
+    padding: 10px;
     margin: 10px 0;
+    display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 .footer{
@@ -105,14 +111,14 @@
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .footer-items{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 30px;
+    gap: 60px;
 }
 
 
@@ -120,4 +126,214 @@
     width: 832.28px;
     height: 24px;
     text-align: center;
+    color: #667085;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    
+    @media only screen and (max-width: 767px) {
+    
+    
+        .user-profile {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .share_desktop {
+            display: none;
+            margin-top: 30px;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            right: 30px;
+            top: -20px;
+            background: #FFFFFF;
+            border: 1px dashed #D0D5DD;
+            border-radius: 50%;
+            z-index: 2;
+            overflow: hidden;
+        }
+    
+        .share_mobile {
+            display: block;
+            margin-top: 30px;
+            margin-right: 20px;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            right: 0px;
+            top: -20px;
+            background: #F9FAFB;
+            border: 1px dashed #D0D5DD;
+            border-radius: 50%;
+            z-index: 2;
+            overflow: hidden;
+        }
+    
+        .share_png {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 15px;
+            top: 15px;
+            object-fit: cover;
+    
+            /* border: 1.66667px solid #98A2B3; */
+        }
+    
+        .link {
+            width: 100%;
+            height: 76px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #EAECF0;
+            padding: 24px 32px;
+            border: 1px solid #EAECF0;
+            border-radius: 8px;
+            color: #101828;
+    
+        }
+    
+        .social-links {
+            margin: 20px;
+        }
+    
+        .icons {
+            display: flex;
+            /* gap: 20px; */
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    
+        .footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 20px 10px 20px;
+        }
+    
+        .footer-items {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 10px;
+        }
+    
+        .footer-text {
+            width: 300px;
+            height: 24px;
+            text-align: start;
+            color: #667085;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+        }
+}
+
+
+@media only screen and (min-width: 768px){
+        .user-profile {
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            .share_desktop {
+                margin-top: 30px;
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                right: 208px;
+                top: -20px;
+                background: #FFFFFF;
+                border: 1px dashed #D0D5DD;
+                border-radius: 50%;
+                z-index: 2;
+                overflow: hidden;
+            }
+        
+            .share_mobile {
+                display: none;
+               
+            }
+        
+            .share_png {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: 15px;
+                top: 15px;
+                object-fit: cover;
+        
+                /* border: 1.66667px solid #98A2B3; */
+            }
+        
+            .link {
+                width: 100%;
+                height: 76px;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #EAECF0;
+                padding: 24px 32px;
+                border: 1px solid #EAECF0;
+                border-radius: 8px;
+                color: #101828;
+        
+            }
+        
+            .social-links {
+                margin: 20px;
+            }
+        
+            .icons {
+                display: flex;
+                /* gap: 20px; */
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+        
+            .footer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 20px 10px 20px;
+            }
+        
+            .footer-items {
+                width: 100%;
+                display: flex;
+            
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+        
+            .footer-text {
+                width: 600px;
+                height: 24px;
+                text-align: center;
+                color: #667085;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+            }
 }
