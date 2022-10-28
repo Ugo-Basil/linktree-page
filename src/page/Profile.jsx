@@ -25,14 +25,14 @@ const Profile = () => {
       </div>
       <div className="user-profile">
         <img src={profileImg} id="profile__img" alt="profile" />
-        <h1 id="twitter">@BroBasilJ</h1>
+        <h1 className="twitter_link" id="twitter">BroBasilJ</h1>
         <h1 id="slack">Basil</h1>
       </div>
 
       <div className="social-links">
         <a
           className="link"
-          id="twitter"
+          id="twitter__link"
           href="https://twitter.com/BroBasilJ"
           target="__blank"
         >
