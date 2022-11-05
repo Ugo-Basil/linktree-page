@@ -61,7 +61,7 @@ const Contact = () => {
           </p>
         </div>
         <div className="form-container">
-          <form onSubmit={handleSubmit}>
+          <form className="form" onSubmit={handleSubmit}>
             <div className="form-group">
               <div className="group-1">
                 <label htmlFor="firstname">First name</label>
@@ -124,7 +124,7 @@ const Contact = () => {
             </div>
             <div className="group-5">
               <input type="checkbox" name="checkbox" id="checkbox" required />
-              <label htmlFor="checkbox-msg">
+              <label className="checkbox-label" htmlFor="checkbox-msg">
                 You agree to providing your data to {name} who may contact you.
               </label>
             </div>
