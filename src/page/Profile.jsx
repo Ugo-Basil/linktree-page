@@ -5,11 +5,12 @@ import share from "../assets/share.png";
 import menu from "../assets/menu.png";
 import githubpng from "../assets/github-sign.png";
 import slackpng from "../assets/slack.png";
-import zuripng from "../assets/Zuri.Internship_Logo.png";
-import footericon from "../assets/footericon.png";
 import "./profile.css";
-const Profile = () => {
+import Footer from "../components/footer/Footer";
 
+
+
+const Profile = () => {
 
   return (
     <div id="container">
@@ -25,7 +26,9 @@ const Profile = () => {
       </div>
       <div className="user-profile">
         <img src={profileImg} id="profile__img" alt="profile" />
-        <h1 className="twitter_link" id="twitter">BroBasilJ</h1>
+        <h1 className="twitter_link" id="twitter">
+          BroBasilJ
+        </h1>
         <h1 id="slack">Basil</h1>
       </div>
 
@@ -78,6 +81,10 @@ const Profile = () => {
         >
           Design Books
         </a>
+          <a className="link" id="contact" href="/contact"  target="__blank">
+          Contact
+          </a>
+        
       </div>
 
       <div className="icons">
@@ -89,13 +96,7 @@ const Profile = () => {
         </a>
       </div>
 
-      <div className="footer">
-        <div className="footer-items">
-          <img src={zuripng} alt="" />
-          <p className="footer-text">HNG Internship 9 Frontend Task</p>
-          <img src={footericon} alt="" />
-        </div>
-      </div>
+      <Footer/>
     </div>
   );
 };
